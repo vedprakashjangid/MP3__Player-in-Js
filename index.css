@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6
+}
+.music__container{
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px 5px rgba(0,0,0,0.2);
+    padding: 30px;
+}
+.music__container #title{
+    text-transform: uppercase;
+    margin: 20px 0 5px 0;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #171717;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.3)
+    ;
+
+
+}
+.music__container #artist{
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight:300;
+}
+.image__container{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    
+}
+.image__container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 12px 30px 5px rgba(0,0,0,0.4);
+}
+.controls{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+.controls .fa-solid{
+    color: #111111;
+    font-size: 20px;
+    cursor: pointer;
+    filter: drop-shadow(0 12px 30px 5px rgba(0,0,0,0.4));
+
+}
+.controls .fa-solid:hover{
+    color: grey;
+}
+.controls .main__btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: #f6f6f6;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls .fa-play:hover{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 10px 20px 2px rgba(0,0,0,0.4);
+}
+
+.anim{
+    animation: rotatePlayer 6s linear infinite;
+    
+
+}
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{ transform: rotate(360deg);
+
+    }
+}
+
+
